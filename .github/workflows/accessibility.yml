@@ -17,11 +17,13 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6.0.3
       - name: Setup node
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v6
+      - name: Install chrome
+        run: npx browser-driver-manager install chrome@150
       - name: Serve src
         working-directory: src
-        run: npx serve &
+        run: npx serve & npx wait-on http://localhost:3000
       - name: Run axe
         run: npx @axe-core/cli http://localhost:3000 --exit

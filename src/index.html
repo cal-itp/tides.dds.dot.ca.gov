@@ -18,7 +18,7 @@
   </head>
   <body class="bg-gray-50">
     <header class="absolute inset-x-0 top-0 z-50">
-      <div class="px-6 lg:pr-0 lg:pl-8 py-2.5 bg-gray-50 dark:bg-gray-700/10 z-100">
+      <div class="px-6 lg:pr-0 lg:pl-8 py-2.5 bg-gray-50 z-100 dark:bg-gray-900 dark:text-gray-400">
         <div class="mx-auto max-w-7xl flex items-center space-x-2">
           <a target="_blank" rel="noopener noreferrer" href="https://ca.gov">
             <span class="sr-only">State of California</span>
@@ -53,19 +53,21 @@
           <div class="relative z-10 pt-14 lg:w-full lg:max-w-2xl">
             <div class="relative px-6 py-32 sm:py-40 lg:px-8 lg:py-56 lg:pr-0">
               <div class="mx-auto max-w-2xl lg:mx-0 lg:max-w-xl">
-                <div class="hidden sm:mb-10 sm:flex">
+                <div class="mb-8 sm:mb-10 flex">
                   <div class="relative rounded-full px-3 py-1 text-sm/6 text-white ring-1 ring-gray-50/10 hover:ring-gray-50/20 dark:text-gray-400 dark:ring-white/10 dark:hover:ring-white/20">
-                    Check out the DDS analysis portfolio. <a href="https://analysis.dds.dot.ca.gov" class="font-semibold whitespace-nowrap text-cyan-600 hover:text-cyan-400"><span aria-hidden="true" class="absolute inset-0"></span>Read more <span aria-hidden="true">&rarr;</span></a>
+                    Check out the DDS analysis portfolio. <a target="_blank" rel="noopener noreferrer" href="https://analysis.dds.dot.ca.gov" class="font-semibold whitespace-nowrap text-cyan-500 hover:text-cyan-400"><span aria-hidden="true" class="absolute inset-0"></span>Read more <span aria-hidden="true">&rarr;</span></a>
                   </div>
                 </div>
                 <h1 class="text-5xl font-semibold tracking-tight text-pretty text-white sm:text-7xl">California TIDES</h1>
                 <p class="mt-8 text-lg font-medium text-pretty text-white sm:text-xl/8">A statewide repository of historical transit operations data in the Transit Integrated Data Exchange Standard (TIDES) data standard.</p>
                 <div class="mt-10 flex items-center gap-x-6">
-                  <a href="https://console.cloud.google.com/storage/browser/calitp-tides" class="inline-flex items-center gap-x-2 rounded-md bg-teal-700 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-teal-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal-600 dark:bg-teal-500 dark:hover:bg-teal-400 dark:focus-visible:outline-teal-500">
+                  <a target="_blank" rel="noopener noreferrer" href="https://console.cloud.google.com/storage/browser/calitp-tides" class="inline-flex items-center gap-x-2 rounded-md bg-teal-700 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-teal-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal-600">
                     View Dataset
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" data-slot="icon" aria-hidden="true" class="-mr-0.5 size-4">
                       <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
                     </svg>
+                  </a>
+                  <a target="_blank" rel="noopener noreferrer" href="https://github.com/cal-itp/watch-the-tides/" class="rounded-md bg-teal-700 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-teal-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal-600">View example in watch-the-tides
                   </a>
                 </div>
               </div>
@@ -83,32 +85,50 @@
           <div class="mx-auto max-w-2xl lg:mx-0 lg:max-w-none">
             <p class="text-base/7 font-semibold text-teal-700 dark:text-teal-400">About this dataset</p>
             <h1 class="mt-2 text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl dark:text-white">Why TIDES?</h1>
-            <div class="mt-10 grid max-w-xl grid-cols-1 gap-8 text-base/7 text-gray-700 lg:max-w-none lg:grid-cols-2 dark:text-gray-300">
+            <div class="mt-10 grid max-w-xl grid-cols-1 gap-4 text-base/7 text-gray-700 lg:gap-8 lg:max-w-none lg:grid-cols-2 dark:text-gray-300">
               <div>
-                <p>TIDES is a data specification for transit operations data including vehicle location data, passenger count data, and fare transaction data.</p>
+                <p>TIDES is a data specification for transit operations data including vehicle locations, passenger counts, and fare transactions.</p>
                 <ul class="list-disc ml-4 mt-8">
-                  <li class="">For transit agencies, TIDES simplifies data access and offers industry best practice tools to improve data quality, integrate data sources, and create the reports and tools you need to plan and manage service.</li>
-                  <li class="mt-4">For consultants, researchers, and partners, TIDES simplifies access to agency data and allows creation of standard reports and tools across agencies and data sets.</li>
-                  <li class="mt-4">For ITS system vendors, TIDES makes it easier to give your customers access to their data and allows them to use the data in more ways.</li>
+                  <li>For transit agencies, TIDES simplifies and unifies your historical operational data, allowing you to improve data quality, integrate data sources, and create the reports and tools you need to plan and manage service, including use cases like National Transit Database reporting and on-time performance analysis.</li>
+                  <li class="mt-4">For consultants, researchers, and partners, TIDES simplifies access to transit operational data and allows creation of standard reports and tools across agencies and data sets.</li>
                 </ul>
               </div>
               <div>
-                <p>TIDES frees your transit data and gives you more options to turn operations data into information on ridership, passenger loads, fare revenue, vehicle speed and delay, service reliability, and more!</p>
-                <p class="mt-8">TIDES is open-source, free for use, and is community governed, developed and supported. This repository provides data schemas and tools to support the access, management, and improvement of historical transit operations data, including vehicle operations, passenger activity, fare collection, and other similar data.</p>
-                <p class="mt-8 text-sm text-gray-500">Cited from <a href="https://tides-transit.org">tides-transit.org</a> on May 29, 2026</p>
+                <ul class="list-disc ml-4">
+                  <li>For national, state, and regional bodies, TIDES enables collecting granular, standardized data from transit providers throughout your jurisdiction, streamlining reporting and unlocking new analysis capabilities without burdensome overhead.</li>
+                  <li class="mt-4">For ITS system vendors, TIDES makes it easier to give your customers access to their data and allows them to use the data in more ways.</li>
+                </ul>
+                <p class="mt-8">TIDES frees your transit data and gives you more options to turn operations data into information on ridership, passenger loads, fare revenue, vehicle speed and delay, service reliability, and more!</p>
+                <div class="mt-4 flex text-sm/6 text-gray-500 dark:text-gray-400">
+                  <p>Cited from tides-transit.org on June 30, 2026</p><a target="_blank" rel="noopener noreferrer" href="https://tides-transit.org" class="pl-2 font-semibold whitespace-nowrap text-cyan-700 hover:text-cyan-600 dark:text-cyan-500 dark:hover:text-cyan-400"><span aria-hidden="true" class="absolute inset-0"></span>Read more <span aria-hidden="true">&rarr;</span></a>
+                </div>
+                </div>
               </div>
             </div>
-            <div class="mt-10 flex">
-              <a href="https://tides-transit.org" class="rounded-md bg-teal-700 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-teal-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal-600 dark:bg-teal-500 dark:hover:bg-teal-400 dark:focus-visible:outline-teal-500">Read more</a>
+            <h2 class="mt-10 text-2xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-3xl dark:text-white">The one thing to know: requester-pays</h2>
+            <div class="mt-10 grid max-w-xl grid-cols-1 gap-4 text-base/7 text-gray-700 lg:gap-8 lg:max-w-none lg:grid-cols-2 dark:text-gray-300">
+              <div>
+                <p>Every request must be billed to a Google Cloud project you own — you pay the egress (pennies for this sample). There is no anonymous download, and the browser/Console download button is unreliable for these buckets. Use the CLI/API with a billing project.</p>
+              </div>
+              <div>
+                <p>Learn more from Google's docs:</p>
+                <ul class="list-disc ml-4">
+                  <li><a target="_blank" rel="noopener noreferrer" href="https://docs.cloud.google.com/storage/docs/using-requester-pays" class="pl-2 font-semibold whitespace-nowrap text-cyan-700 hover:text-cyan-600 dark:text-cyan-500 dark:hover:text-cyan-400">Use Requester Pays</a></li>
+                  <li><a target="_blank" rel="noopener noreferrer" href="https://docs.cloud.google.com/storage/docs/requester-pays" class="pl-2 font-semibold whitespace-nowrap text-cyan-700 hover:text-cyan-600 dark:text-cyan-500 dark:hover:text-cyan-400">Requester Pays Overview</a></li>
+                </ul>
+                <div class="mt-4 flex text-sm/6 text-gray-500 dark:text-gray-400">
+                  <p>Cited from watch-the-tides on June 30, 2026</p><a target="_blank" rel="noopener noreferrer" href="https://github.com/cal-itp/watch-the-tides" class="pl-2 font-semibold whitespace-nowrap text-cyan-700 hover:text-cyan-600 dark:text-cyan-500 dark:hover:text-cyan-400"><span aria-hidden="true" class="absolute inset-0"></span>Read more <span aria-hidden="true">&rarr;</span></a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </main>
 
-    <footer class="bg-gray-50 dark:bg-gray-900">
-      <div class="mx-auto max-w-7xl px-6 py-12 md:flex md:items-center md:justify-between lg:px-8">
-        <p class="mt-8 text-center text-sm/6 text-gray-600 md:order-1 md:mt-0 dark:text-gray-400">&copy; 2026 California Department of Transportation. Caltrans&reg;, the California Department of Transportation&reg; and the Caltrans logo are registered service marks of the California Department of Transportation and may not be copied, distributed, displayed, reproduced or transmitted in any form without prior written permission from the California Department of Transportation.</p>
+    <footer class="bg-gray-50 dark:bg-gray-800">
+      <div class="mx-auto max-w-7xl px-6 py-4 md:flex md:items-center md:justify-between lg:px-8">
+        <p class="text-center text-sm/6 text-gray-600 md:order-1 dark:text-gray-400">&copy; 2026 California Department of Transportation. Caltrans&reg;, the California Department of Transportation&reg; and the Caltrans logo are registered service marks of the California Department of Transportation and may not be copied, distributed, displayed, reproduced or transmitted in any form without prior written permission from the California Department of Transportation.</p>
       </div>
     </footer>
   </body>
